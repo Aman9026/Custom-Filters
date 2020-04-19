@@ -46,7 +46,6 @@ Import module opencv
 OpenCV load image from storage and convert into numpy array:
 ```
 >>> photo = cv2.imread('imagename.jpg')
-
 ```
 **We don't need to load numpy module, opencv call its internal property.**
 
