@@ -20,3 +20,41 @@ Install OpenCV by Anaconda:
 
 Install by python installer pip:
  ```pip install opencv-python```
+
+## Adding filters
+We can add inbuilt filters or create custom filters by ourself, We'll incorporate both here.
+
+***Original Image:***
+![ogimage](https://github.com/Aman9026/ImageProcessing/blob/master/Data/Images/billu.jpeg)
+
+**Now let's add filters to it.**
+
+Import module opencv
+```
+>>> import cv2
+```
+
+OpenCV load image from storage and convert into numpy array:
+```
+>>> photo = cv2.imread('imagename.jpg')
+
+```
+**We don't need to load numpy module, opencv call its internal property.**
+
+Convert image into gray image:
+
+```>>> gray_image = cv2.cvtColor(photo , cv2.COLOR_BGR2GRAY)```
+
+Show image, but we have use waitKey()  and destroyAllWindows() with imshow(), otherwise program will hang up
+
+```
+>>> cv2.imshow('image title', photo)
+>>> cv2.waitKey()
+>>> cv2.destroyAllWindows()
+```
+
+**waitkey():** used to hold windows for some time interval, and also wait for any key input from keyword, so listen key and then go to next statement
+
+**destroyAllWindows():** close any window, open by imshow()
+
+
