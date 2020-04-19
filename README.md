@@ -74,3 +74,49 @@ We can convert the image to gray while reading only by a simple trick given belo
 >>> grey_photo = cv2.imread('image.jpg' , 0)
 
 ```
+
+## Remove particular color from image
+
+Split Color from colorful image:
+
+```>>> B, G, R = cv2.split(photo)```
+
+```
+>>> import numpy as np
+>>> height = photo.shape[0]
+>>> width = photo.shape[1]
+>>> zero = np.zeros((height, width))
+
+>>> cv2.merge([zero, G, R])
+```
+
+It give error because, array of image require datatype “**unit8**” but zero function create datatype float
+
+```
+>>>B.dtype
+dtype('uint8')
+```
+
+What is uint, 8-bit unsigned, here 8 is 8 bit, means 2^8 = 0-255 number we can store in it.
+
+So if u store “1000”, it won't store this:
+```>>> photo[0][0][0] = "1000"```
+
+```
+>>> zero.dtype
+dtype('float64')
+```
+```
+>>> zero_unit8 = zero.astype('uint8')
+>>> new_photo_B_removed = cv2.merge([zero_unit8, G, R])
+```
+```
+>>> cv2.imshow('image title', new_photo_B_removed)
+>>> cv2.waitKey()
+>>> cv2.destroyAllWindows()
+```
+
+**If we want to amplify any color in image, let say green color :**
+```
+>>> new_photo_B_removed = cv2.merge([zero_unit8, G+100, R])
+```
