@@ -57,6 +57,8 @@ Show image, but we have use waitKey()  and destroyAllWindows() with imshow(), ot
 
 **destroyAllWindows():** close any window, open by imshow()
 
+![grayfilter](https://github.com/Aman9026/ImageProcessing/blob/master/Data/Images/grayscale.jpeg)
+
 A very faster alternative of adding filter by inbuilt functions is by doing it manually in an optimized way. 
 We can convert the image to gray while reading only by a simple trick given below.
 ```
