@@ -127,3 +127,10 @@ If we want to remove all the colour except **Red**
 ```>>> photo[:,:,0:2] = 0```
 
 ![redblast](https://github.com/Aman9026/ImageProcessing/blob/master/Data/Images/redblast.jpeg)
+
+## Custom filters
+I created a custom filter similar to "**ambience**" in popular photo editing applications.
+
+Just amplified BLUE and GREEN by 100 without changing RED.
+
+![ambience](https://github.com/Aman9026/ImageProcessing/blob/master/Data/Images/ambience.jpeg)
