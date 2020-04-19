@@ -120,3 +120,11 @@ dtype('float64')
 ```
 >>> new_photo_B_removed = cv2.merge([zero_unit8, G+100, R])
 ```
+
+**Same thing done by the code explained above can be done in one line like this:**
+
+If we want to remove all the colour except **Red**
+
+```>>> photo[:,:,0:2] = 0```
+
+![redblast](https://github.com/Aman9026/ImageProcessing/blob/master/Data/Images/redblast.jpeg)
