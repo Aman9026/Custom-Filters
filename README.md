@@ -34,7 +34,7 @@ Install by python installer pip:
 We can add inbuilt filters or create custom filters by ourself, We'll incorporate both here.
 
 ***Original Image:***
-![ogimage](https://github.com/Aman9026/ImageProcessing/blob/master/Data/Images/billu.jpeg)
+![ogimage](https://github.com/Aman9026/Custom-Filters/blob/master/Data/Images/billu.jpeg)
 
 **Now let's add filters to it.**
 
@@ -65,7 +65,7 @@ Show image, but we have use waitKey()  and destroyAllWindows() with imshow(), ot
 
 **destroyAllWindows():** close any window, open by imshow()
 
-![grayfilter](https://github.com/Aman9026/ImageProcessing/blob/master/Data/Images/grayscale.jpeg)
+![grayfilter](https://github.com/Aman9026/Custom-Filters/blob/master/Data/Images/grayscale.jpeg)
 
 A very faster alternative of adding filter by inbuilt functions is by doing it manually in an optimized way. 
 We can convert the image to gray while reading only by a simple trick given below.
@@ -126,11 +126,11 @@ If we want to remove all the colour except **Red**
 
 ```>>> photo[:,:,0:2] = 0```
 
-![redblast](https://github.com/Aman9026/ImageProcessing/blob/master/Data/Images/redblast.jpeg)
+![redblast](https://github.com/Aman9026/Custom-Filters/blob/master/Data/Images/redblast.jpeg)
 
 ## Custom filters
 I created a custom filter similar to "**ambience**" in popular photo editing applications.
 
 Just amplified BLUE and GREEN by 100 without changing RED.
 
-![ambience](https://github.com/Aman9026/ImageProcessing/blob/master/Data/Images/ambience.jpeg)
+![ambience](https://github.com/Aman9026/Custom-Filters/blob/master/Data/Images/ambience.jpeg)
