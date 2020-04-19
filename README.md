@@ -57,4 +57,9 @@ Show image, but we have use waitKey()  and destroyAllWindows() with imshow(), ot
 
 **destroyAllWindows():** close any window, open by imshow()
 
+A very faster alternative of adding filter by inbuilt functions is by doing it manually in an optimized way. 
+We can convert the image to gray while reading only by a simple trick given below.
+```
+>>> grey_photo = cv2.imread('image.jpg' , 0)
 
+```
