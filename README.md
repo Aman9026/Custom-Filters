@@ -74,7 +74,7 @@ We can convert the image to gray while reading only by a simple trick given belo
 
 ```
 
-## Remove particular color from image
+## Remove or Amplify a color from image
 
 Split Color from colorful image:
 
