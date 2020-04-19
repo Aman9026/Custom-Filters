@@ -11,7 +11,16 @@
 ```
 Human visual system(eye & visual cortex) is incredibly good at image processing
 ```
-**OpenCV:** Open source Computer Vision Software for image processing
+
+**Color Spaces:** different method to store image in computer (eg, RGB, HSV, CMYK)
+
+
+**OpenCV:** Open source Computer Vision Software for image processing, OpenCV default color space is RGB, but stores color in BGR format, to improve processing of image operation
+
+
+**HSV:** hue, saturation and value/brightness , is a color space that attempts to represent colors the way humans perceive it, in CV we use for color segmentation
+
+
 
 ## Installation
 
